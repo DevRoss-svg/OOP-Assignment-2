@@ -1,0 +1,10 @@
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+  }
+  .project, .task {
+    margin-bottom: 20px;
+  }
+  .task-list {
+    margin-top: 10px;
+  }

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Task Management System Assignment-2</title>
+</head>
+<body>
+
+  <h1>Task Management System Assignment-2</h1>
+
+  <!-- User Assignment Section -->
+  <h2>Create User</h2>
+  <label for="userName">Name:</label>
+  <input type="text" id="userName" placeholder="Enter user name">
+  <label for="userEmail">Email:</label>
+  <input type="email" id="userEmail" placeholder="Enter user email">
+  <button onclick="createUser()">Create User</button>
+
+  <h2>Create Project</h2>
+  <label for="projectName">Project Name:</label>
+  <input type="text" id="projectName" placeholder="Enter project name">
+  <label for="projectDesc">Description:</label>
+  <input type="text" id="projectDesc" placeholder="Enter project description">
+  <button onclick="createProject()">Create Project</button>
+
+  <h2>Create Task</h2>
+  <label for="taskName">Task Name:</label>
+  <input type="text" id="taskName" placeholder="Enter task name">
+  <label for="taskDesc">Task Description:</label>
+  <input type="text" id="taskDesc" placeholder="Enter task description">
+  <label for="taskType">Task Type:</label>
+  <select id="taskType">
+    <option value="DevelopmentTask">Development Task</option>
+    <option value="MarketingTask">Marketing Task</option>
+  </select>
+  <label for="taskDueDate">Due Date:</label>
+  <input type="date" id="taskDueDate">
+  <button onclick="createTask()">Create Task</button>
+
+  <h2>Projects Overview</h2>
+  <div id="projectList"></div>
+
+  <script src="app.js"></script>
+
+</body>
+</html>
